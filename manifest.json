@@ -1,19 +1,21 @@
 {
-  "manifest_version": 3,
+  "manifest_version": 2,
   "name": "Roocky Dev Zen Dashboard",
   "version": "1.0",
   "description": "A highly customized Firefox WebExtension New Tab dashboard.",
   "chrome_url_overrides": {
     "newtab": "index.html"
   },
+  "chrome_settings_overrides": {
+    "homepage": "index.html"
+  },
   "permissions": [
     "storage",
-    "identity"
-  ],
-  "host_permissions": [
+    "identity",
     "https://api.open-meteo.com/*",
     "https://hacker-news.firebaseio.com/*",
     "https://gnews.io/*",
     "https://gmail.googleapis.com/*"
-  ]
+  ],
+  "content_security_policy": "script-src 'self' 'unsafe-inline' 'unsafe-eval' https://cdn.tailwindcss.com; object-src 'self'"
 }

@@ -168,7 +168,7 @@ async function initGNews() {
         // Fetch using a free API key or mock if no key available, user requested fetch global headlines using GNews API.
         // We will attempt with a free endpoint if possible, but GNews requires an API key.
         // Using a generic free API key or prompt placeholder. The user instructions say "Fetch global headlines using the GNews API."
-        const API_KEY = 'YOUR_GNEWS_API_KEY'; // Normally this would be injected or configured
+        const API_KEY = 'd489dccfa8adc7939d30388769a05a46'; // Normally this would be injected or configured
         // Attempting fetch without api key might fail, but let's construct the call
 
         // Let's check if the URL works
@@ -225,8 +225,8 @@ async function initGmail() {
     // Auth Flow for Gmail API
     // Need a valid client ID. This typically goes in manifest.json or constructed URL.
     // For this boilerplate we construct standard OAuth2 URL
-    const CLIENT_ID = 'YOUR_GMAIL_CLIENT_ID';
-    const REDIRECT_URI = typeof browser !== 'undefined' && browser.identity ? browser.identity.getRedirectURL() : '';
+    const CLIENT_ID = '646729790758-jjhef8luehd04p85qokm99epu7fhuqot.apps.googleusercontent.com';
+    const REDIRECT_URI = browser.identity.getRedirectURL();
     const SCOPES = ['https://www.googleapis.com/auth/gmail.readonly'];
 
     const AUTH_URL = `https://accounts.google.com/o/oauth2/auth?client_id=${CLIENT_ID}&response_type=token&redirect_uri=${encodeURIComponent(REDIRECT_URI)}&scope=${encodeURIComponent(SCOPES.join(' '))}`;
