@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html class="dark" lang="en"><head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Roocky Dev Zen Dashboard V1</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&amp;display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#3b82f6",
+                        "background-light": "#f6f7f8",
+                        "background-dark": "#0a0f14",
+                    },
+                    fontFamily: {
+                        "display": ["Manrope"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 font-display min-h-screen">
+<div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden pl-0 lg:pl-16">
+    <div class="layout-container flex h-full grow flex-col max-w-[1440px] mx-auto w-full p-6 md:p-8 lg:p-12 gap-8">
+        <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-6">
+            <div class="flex flex-col gap-2">
+                <h1 class="text-4xl md:text-5xl font-black leading-tight tracking-tight text-slate-900 dark:text-white">Welcome Back, Roocky dev</h1>
+                <div class="flex items-center gap-4 text-slate-500 dark:text-slate-400 text-lg font-medium">
+                    <span>Thursday, October 24 | 10:30 AM</span>
+                    <span class="w-1.5 h-1.5 rounded-full bg-slate-400 dark:bg-slate-600"></span>
+                    <div class="flex items-center gap-2">
+                        <span class="material-symbols-outlined text-xl">partly_cloudy_day</span>
+                        <span>28°C, Kajang, MY</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+            <div class="lg:col-span-3 flex flex-col gap-8">
+                <div class="flex flex-col gap-4">
+                    <h3 class="text-slate-900 dark:text-white text-xl font-bold tracking-tight px-1">Quick Access</h3>
+                    <div class="grid grid-cols-2 gap-3">
+                        <a class="flex flex-col gap-3 rounded-xl border border-slate-200 dark:border-slate-800 bg-white/50 dark:bg-slate-900/40 backdrop-blur-md p-4 items-center justify-center hover:bg-slate-50 dark:hover:bg-slate-800/60 hover:border-primary/50 transition-all group" href="#">
+                            <div class="text-slate-700 dark:text-slate-300 group-hover:text-primary transition-colors">
+                                <span class="material-symbols-outlined text-3xl">mail</span>
+                            </div>
+                            <h2 class="text-slate-900 dark:text-white text-sm font-bold">Gmail</h2>
+                        </a>
+                        <a class="flex flex-col gap-3 rounded-xl border border-slate-200 dark:border-slate-800 bg-white/50 dark:bg-slate-900/40 backdrop-blur-md p-4 items-center justify-center hover:bg-slate-50 dark:hover:bg-slate-800/60 hover:border-primary/50 transition-all group" href="#">
+                            <div class="text-slate-700 dark:text-slate-300 group-hover:text-primary transition-colors">
+                                <span class="material-symbols-outlined text-3xl">school</span>
+                            </div>
+                            <h2 class="text-slate-900 dark:text-white text-sm font-bold">UNITEN</h2>
+                        </a>
+                        <a class="flex flex-col gap-3 rounded-xl border border-slate-200 dark:border-slate-800 bg-white/50 dark:bg-slate-900/40 backdrop-blur-md p-4 items-center justify-center hover:bg-slate-50 dark:hover:bg-slate-800/60 hover:border-primary/50 transition-all group" href="#">
+                            <div class="text-slate-700 dark:text-slate-300 group-hover:text-primary transition-colors">
+                                <span class="material-symbols-outlined text-3xl">code</span>
+                            </div>
+                            <h2 class="text-slate-900 dark:text-white text-sm font-bold">GitHub</h2>
+                        </a>
+                        <a class="flex flex-col gap-3 rounded-xl border border-slate-200 dark:border-slate-800 bg-white/50 dark:bg-slate-900/40 backdrop-blur-md p-4 items-center justify-center hover:bg-slate-50 dark:hover:bg-slate-800/60 hover:border-primary/50 transition-all group" href="#">
+                            <div class="text-slate-700 dark:text-slate-300 group-hover:text-primary transition-colors">
+                                <span class="material-symbols-outlined text-3xl">dns</span>
+                            </div>
+                            <h2 class="text-slate-900 dark:text-white text-sm font-bold">MC Server</h2>
+                        </a>
+                        <a class="flex flex-col gap-3 rounded-xl border border-slate-200 dark:border-slate-800 bg-white/50 dark:bg-slate-900/40 backdrop-blur-md p-4 items-center justify-center hover:bg-slate-50 dark:hover:bg-slate-800/60 hover:border-primary/50 transition-all group" href="#">
+                            <div class="text-slate-700 dark:text-slate-300 group-hover:text-primary transition-colors">
+                                <span class="material-symbols-outlined text-3xl">draw</span>
+                            </div>
+                            <h2 class="text-slate-900 dark:text-white text-sm font-bold">Figma</h2>
+                        </a>
+                    </div>
+                </div>
+                <div class="flex flex-col gap-4">
+                    <div class="flex items-center justify-between px-1">
+                        <h3 class="text-slate-900 dark:text-white text-xl font-bold tracking-tight">Tasks</h3>
+                        <button class="text-primary hover:text-primary/80 transition-colors">
+                            <span class="material-symbols-outlined">add_circle</span>
+                        </button>
+                    </div>
+                    <div class="flex flex-col rounded-xl border border-slate-200 dark:border-slate-800 bg-white/50 dark:bg-slate-900/40 backdrop-blur-md overflow-hidden">
+                        <div class="p-3 border-b border-slate-200 dark:border-slate-800">
+                            <input class="w-full bg-transparent border-none text-sm focus:ring-0 placeholder:text-slate-500 text-slate-900 dark:text-white px-2" placeholder="Add a new task..." type="text"/>
+                        </div>
+                        <div class="flex flex-col p-2 max-h-[300px] overflow-y-auto">
+                            <label class="flex items-start gap-3 p-2 hover:bg-slate-100 dark:hover:bg-slate-800/60 rounded-lg cursor-pointer transition-colors">
+                                <input class="form-checkbox rounded border-slate-300 dark:border-slate-600 text-primary focus:ring-primary w-5 h-5 bg-transparent mt-0.5" type="checkbox"/>
+                                <span class="text-slate-700 dark:text-slate-300 text-sm font-medium select-none leading-snug">Build AI logic for Planetary Claim (Unity)</span>
+                            </label>
+                            <label class="flex items-start gap-3 p-2 hover:bg-slate-100 dark:hover:bg-slate-800/60 rounded-lg cursor-pointer transition-colors">
+                                <input class="form-checkbox rounded border-slate-300 dark:border-slate-600 text-primary focus:ring-primary w-5 h-5 bg-transparent mt-0.5" type="checkbox"/>
+                                <span class="text-slate-700 dark:text-slate-300 text-sm font-medium select-none leading-snug">Update Alto Clef Fork mining bot</span>
+                            </label>
+                            <label class="flex items-start gap-3 p-2 hover:bg-slate-100 dark:hover:bg-slate-800/60 rounded-lg cursor-pointer transition-colors">
+                                <input class="form-checkbox rounded border-slate-300 dark:border-slate-600 text-primary focus:ring-primary w-5 h-5 bg-transparent mt-0.5" type="checkbox"/>
+                                <span class="text-slate-700 dark:text-slate-300 text-sm font-medium select-none leading-snug">Wireframe Problem Marketplace</span>
+                            </label>
+                            <label class="flex items-start gap-3 p-2 hover:bg-slate-100 dark:hover:bg-slate-800/60 rounded-lg cursor-pointer transition-colors">
+                                <input class="form-checkbox rounded border-slate-300 dark:border-slate-600 text-primary focus:ring-primary w-5 h-5 bg-transparent mt-0.5" type="checkbox"/>
+                                <span class="text-slate-700 dark:text-slate-300 text-sm font-medium select-none leading-snug">Review CS assignments for UNITEN</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="lg:col-span-6 flex flex-col gap-8">
+                <h3 class="text-slate-900 dark:text-white text-xl font-bold tracking-tight px-1">Tech &amp; Dev Feed</h3>
+                <div class="flex flex-col gap-6">
+                    <div class="flex flex-col gap-4">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <a class="group flex flex-col rounded-xl border border-slate-200 dark:border-slate-800 bg-white/50 dark:bg-slate-900/40 backdrop-blur-md overflow-hidden hover:border-primary/50 transition-all" href="#">
+                                <div class="h-32 bg-slate-200 dark:bg-slate-800 w-full relative overflow-hidden">
+                                    <div class="absolute inset-0 bg-gradient-to-tr from-primary/40 to-purple-500/40 opacity-50 group-hover:scale-105 transition-transform duration-500"></div>
+                                    <span class="absolute top-2 right-2 bg-black/50 text-white text-xs px-2 py-1 rounded backdrop-blur-sm">2h ago</span>
+                                </div>
+                                <div class="p-4 flex flex-col gap-2">
+                                    <h5 class="text-slate-900 dark:text-white font-bold leading-snug group-hover:text-primary transition-colors line-clamp-2">C++23 Standard Brings Major Performance Boosts for Game Engines</h5>
+                                    <p class="text-slate-500 dark:text-slate-400 text-sm line-clamp-2">New standard library features and language additions expected to reduce rendering overhead in major engines.</p>
+                                </div>
+                            </a>
+                            <a class="group flex flex-col rounded-xl border border-slate-200 dark:border-slate-800 bg-white/50 dark:bg-slate-900/40 backdrop-blur-md overflow-hidden hover:border-primary/50 transition-all" href="#">
+                                <div class="h-32 bg-slate-200 dark:bg-slate-800 w-full relative overflow-hidden">
+                                    <div class="absolute inset-0 bg-gradient-to-br from-emerald-500/40 to-teal-500/40 opacity-50 group-hover:scale-105 transition-transform duration-500"></div>
+                                    <span class="absolute top-2 right-2 bg-black/50 text-white text-xs px-2 py-1 rounded backdrop-blur-sm">4h ago</span>
+                                </div>
+                                <div class="p-4 flex flex-col gap-2">
+                                    <h5 class="text-slate-900 dark:text-white font-bold leading-snug group-hover:text-primary transition-colors line-clamp-2">Unity Announces Deep Integration with New Generative AI Tools</h5>
+                                    <p class="text-slate-500 dark:text-slate-400 text-sm line-clamp-2">Upcoming Editor update will allow seamless generation of textures, models, and basic scripts directly within the scene view.</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-4 mt-2">
+                        <h4 class="text-slate-500 dark:text-slate-400 text-sm font-bold uppercase tracking-wider px-1">World Updates</h4>
+                        <div class="flex flex-col gap-3">
+                            <a class="group flex gap-4 rounded-xl border border-slate-200 dark:border-slate-800 bg-white/50 dark:bg-slate-900/40 backdrop-blur-md p-3 hover:bg-slate-50 dark:hover:bg-slate-800/60 transition-all items-center" href="#">
+                                <div class="w-16 h-16 rounded-lg bg-slate-200 dark:bg-slate-800 shrink-0 relative overflow-hidden">
+                                    <div class="absolute inset-0 bg-gradient-to-r from-blue-500/30 to-indigo-500/30"></div>
+                                </div>
+                                <div class="flex flex-col flex-1">
+                                    <h5 class="text-slate-900 dark:text-white font-bold text-sm group-hover:text-primary transition-colors">Germany &amp; Netherlands Expand Tech Scholarship Programs</h5>
+                                    <p class="text-slate-500 dark:text-slate-400 text-xs mt-1">New initiatives aim to attract international CS students with fully-funded master's programs and living stipends.</p>
+                                </div>
+                                <span class="text-slate-400 text-xs whitespace-nowrap">1h</span>
+                            </a>
+                            <a class="group flex gap-4 rounded-xl border border-slate-200 dark:border-slate-800 bg-white/50 dark:bg-slate-900/40 backdrop-blur-md p-3 hover:bg-slate-50 dark:hover:bg-slate-800/60 transition-all items-center" href="#">
+                                <div class="w-16 h-16 rounded-lg bg-slate-200 dark:bg-slate-800 shrink-0 relative overflow-hidden">
+                                    <div class="absolute inset-0 bg-gradient-to-bl from-orange-500/30 to-red-500/30"></div>
+                                </div>
+                                <div class="flex flex-col flex-1">
+                                    <h5 class="text-slate-900 dark:text-white font-bold text-sm group-hover:text-primary transition-colors">AI Agents in Multiplayer Games Show Emergent Behavior</h5>
+                                    <p class="text-slate-500 dark:text-slate-400 text-xs mt-1">Researchers observe complex cooperation and betrayal tactics among LLM-driven NPCs in a simulated survival environment.</p>
+                                </div>
+                                <span class="text-slate-400 text-xs whitespace-nowrap">3h</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="lg:col-span-3 flex flex-col gap-8">
+                <h3 class="text-slate-900 dark:text-white text-xl font-bold tracking-tight px-1">Communications</h3>
+                <div class="flex flex-col rounded-2xl border border-slate-200 dark:border-slate-800 bg-white/80 dark:bg-slate-900/40 backdrop-blur-xl overflow-hidden shadow-sm">
+                    <div class="p-6 border-b border-slate-200 dark:border-slate-800 flex flex-col items-center justify-center gap-2">
+                        <div class="text-[4rem] font-black text-white leading-none tracking-tighter drop-shadow-md">
+                            12
+                        </div>
+                        <h4 class="text-slate-900 dark:text-slate-300 font-medium text-sm mt-1 uppercase tracking-widest">Unread</h4>
+                    </div>
+                    <div class="flex flex-col divide-y divide-slate-200 dark:divide-slate-800/60">
+                        <a class="p-3 hover:bg-slate-50 dark:hover:bg-slate-800/40 transition-colors group flex flex-col gap-1" href="#">
+                            <span class="font-bold text-slate-900 dark:text-slate-200 text-xs uppercase tracking-wide group-hover:text-primary transition-colors">Dr. Azman (UNITEN)</span>
+                            <h5 class="text-slate-700 dark:text-slate-400 text-sm truncate">CS301 Assignment 2 Guidelines Updated</h5>
+                        </a>
+                        <a class="p-3 hover:bg-slate-50 dark:hover:bg-slate-800/40 transition-colors group flex flex-col gap-1" href="#">
+                            <span class="font-bold text-slate-900 dark:text-slate-200 text-xs uppercase tracking-wide group-hover:text-primary transition-colors">GitHub Alerts</span>
+                            <h5 class="text-slate-700 dark:text-slate-400 text-sm truncate">Dependabot: 3 vulnerabilities in Alto Clef</h5>
+                        </a>
+                        <a class="p-3 hover:bg-slate-50 dark:hover:bg-slate-800/40 transition-colors group flex flex-col gap-1" href="#">
+                            <span class="font-bold text-slate-900 dark:text-slate-200 text-xs uppercase tracking-wide group-hover:text-primary transition-colors">DAAD Scholarships</span>
+                            <h5 class="text-slate-700 dark:text-slate-400 text-sm truncate">Application portal now open for Winter 2025</h5>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body></html>
